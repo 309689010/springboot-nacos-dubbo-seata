@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>egg-parent</groupId>
+        <artifactId>egg-parent</artifactId>
+        <version>0.1.0-SNAPSHOT</version>
+        <!--<relativePath>../pom.xml</relativePath>-->
+    </parent>
+
+    <groupId>egg.core</groupId>
+    <artifactId>egg-provider2</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+    <name>egg-provider2</name>
+    <packaging>jar</packaging>
+    <description/>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <!--<jar.dic>${project.basedir}/../</jar.dic>-->
+        <druid.version>1.1.10</druid.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>egg-core</groupId>
+            <artifactId>egg-interface</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>egg-provider2</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>
